@@ -1,0 +1,60 @@
+:root {
+  --background-color: #765858;
+  --text-color: #fff;
+  --quote-text-color: #e8d2d2;
+  --author-text-color: #e8d2d2;
+  --clock-background: #e8d2d2;
+  --clock-border: #ccc;
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
+  --clock-text-color: #5e4848;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  height: 100vh;
+  font-family: "Monaspace Krypton";
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+#clock-container {
+  display: flex;
+  gap: 20px;
+}
+
+.clock {
+  background: var(--clock-background);
+  border: 1px solid var(--clock-border);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--box-shadow-color);
+  color: var(--clock-text-color);
+}
+
+#quote-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 80%;
+}
+
+#quote {
+  color: var(--quote-text-color);
+  font-size: 3rem;
+}
+
+#author {
+  color: var(--author-text-color);
+  font-size: 1.5rem;
+}
